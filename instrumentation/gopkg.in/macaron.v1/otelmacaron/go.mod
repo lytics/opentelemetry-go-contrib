@@ -5,8 +5,8 @@ go 1.18
 replace github.com/lytics/opentelemetry-go-contrib/propagators/b3 => ../../../../propagators/b3
 
 require (
+	github.com/lytics/opentelemetry-go-contrib/propagators/b3 v1.15.0-a
 	github.com/stretchr/testify v1.8.2
-	github.com/lytics/opentelemetry-go-contrib/propagators/b3 v1.15.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/trace v1.14.0
 	gopkg.in/macaron.v1 v1.5.0

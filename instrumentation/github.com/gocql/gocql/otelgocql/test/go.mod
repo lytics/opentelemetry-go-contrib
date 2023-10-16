@@ -4,9 +4,9 @@ go 1.18
 
 require (
 	github.com/gocql/gocql v1.3.1
-	github.com/stretchr/testify v1.8.2
 	github.com/lytics/opentelemetry-go-contrib v1.15.0
-	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql v0.40.0
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql v0.40.0-a
+	github.com/stretchr/testify v1.8.2
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0
 	go.opentelemetry.io/otel/sdk/metric v0.37.0

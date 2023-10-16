@@ -3,11 +3,11 @@ module github.com/lytics/opentelemetry-go-contrib/propagators/autoprop
 go 1.18
 
 require (
+	github.com/lytics/opentelemetry-go-contrib/propagators/aws v1.15.0-a
+	github.com/lytics/opentelemetry-go-contrib/propagators/b3 v1.15.0-a
+	github.com/lytics/opentelemetry-go-contrib/propagators/jaeger v1.15.0-a
+	github.com/lytics/opentelemetry-go-contrib/propagators/ot v1.15.0-a
 	github.com/stretchr/testify v1.8.2
-	github.com/lytics/opentelemetry-go-contrib/propagators/aws v1.15.0
-	github.com/lytics/opentelemetry-go-contrib/propagators/b3 v1.15.0
-	github.com/lytics/opentelemetry-go-contrib/propagators/jaeger v1.15.0
-	github.com/lytics/opentelemetry-go-contrib/propagators/ot v1.15.0
 	go.opentelemetry.io/otel v1.14.0
 )
 

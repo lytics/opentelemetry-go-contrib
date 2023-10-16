@@ -4,8 +4,8 @@ go 1.18
 
 require (
 	github.com/Shopify/sarama v1.38.1
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/Shopify/sarama/otelsarama v0.40.0-a
 	github.com/stretchr/testify v1.8.2
-	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/Shopify/sarama/otelsarama v0.40.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0
 	go.opentelemetry.io/otel/trace v1.14.0

@@ -10,10 +10,10 @@ replace (
 
 require (
 	github.com/aws/aws-lambda-go v1.37.0
+	github.com/lytics/opentelemetry-go-contrib/detectors/aws/lambda v0.40.0-a
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda v0.40.0-a
+	github.com/lytics/opentelemetry-go-contrib/propagators/aws v1.15.0-a
 	github.com/stretchr/testify v1.8.2
-	github.com/lytics/opentelemetry-go-contrib/detectors/aws/lambda v0.40.0
-	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda v0.40.0
-	github.com/lytics/opentelemetry-go-contrib/propagators/aws v1.15.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0
 	go.opentelemetry.io/otel/trace v1.14.0

@@ -3,9 +3,9 @@ module github.com/lytics/opentelemetry-go-contrib/propagators/opencensus/example
 go 1.18
 
 require (
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.40.0-a
+	github.com/lytics/opentelemetry-go-contrib/propagators/opencensus v0.40.0-a
 	go.opencensus.io v0.24.0
-	github.com/lytics/opentelemetry-go-contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.40.0
-	github.com/lytics/opentelemetry-go-contrib/propagators/opencensus v0.40.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0
