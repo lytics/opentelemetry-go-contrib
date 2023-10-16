@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otelmux // import "go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux"
+package otelmux // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gorilla/mux/otelmux"
 
 import (
 	"fmt"
@@ -31,7 +31,7 @@ import (
 )
 
 const (
-	tracerName = "go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux"
+	tracerName = "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gorilla/mux/otelmux"
 )
 
 // Middleware sets up a handler to start tracing the incoming

@@ -14,7 +14,7 @@
 
 // Based on https://github.com/go-kit/kit/blob/3796a6b25f5c6c545454d3ed7187c4ced258083d/tracing/opencensus/endpoint.go
 
-package otelkit // import "go.opentelemetry.io/contrib/instrumentation/github.com/go-kit/kit/otelkit"
+package otelkit // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/go-kit/kit/otelkit"
 
 import (
 	"context"
@@ -29,7 +29,7 @@ import (
 )
 
 const (
-	tracerName = "go.opentelemetry.io/contrib/instrumentation/github.com/go-kit/kit/otelkit"
+	tracerName = "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/go-kit/kit/otelkit"
 
 	// defaultSpanName is the default endpoint span name to use.
 	defaultSpanName = "gokit/endpoint"

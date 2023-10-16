@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otelbeego // import "go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego"
+package otelbeego // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego"
 
 import (
 	"context"
@@ -20,8 +20,8 @@ import (
 
 	"go.opentelemetry.io/otel/codes"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego/internal"
-	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego/internal"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/net/http/otelhttp"
 	"go.opentelemetry.io/otel/trace"
 
 	"github.com/astaxie/beego"
@@ -143,7 +143,7 @@ func RenderBytes(c *beego.Controller) ([]byte, error) {
 func span(c *beego.Controller, spanName string) (context.Context, trace.Span) {
 	ctx := c.Ctx.Request.Context()
 	span := trace.SpanFromContext(ctx)
-	tracer := span.TracerProvider().Tracer("go.opentelemetry.io/contrib/instrumentation/github/astaxie/beego/otelbeego")
+	tracer := span.TracerProvider().Tracer("github.com/lytics/opentelemetry-go-contrib/instrumentation/github/astaxie/beego/otelbeego")
 	return tracer.Start(
 		ctx,
 		spanName,

@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/instrumentation/github.com/go-kit/kit/otelkit
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/go-kit/kit/otelkit
 
 go 1.18
 

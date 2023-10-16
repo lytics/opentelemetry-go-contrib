@@ -19,4 +19,4 @@
 //
 // The instrumentation works by wrapping the memcached client by calling
 // `NewClientWithTracing` and tracing it's every operation.
-package otelmemcache // import "go.opentelemetry.io/contrib/instrumentation/github.com/bradfitz/gomemcache/memcache/otelmemcache"
+package otelmemcache // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/bradfitz/gomemcache/memcache/otelmemcache"

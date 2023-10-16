@@ -8,7 +8,7 @@ This module provides instrumentation for [`AWS Lambda`](https://docs.aws.amazon.
 ## Installation
 
 ```bash
-go get -u go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda
+go get -u github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda
 ```
 
 ## example
@@ -43,7 +43,7 @@ func main() {
 Now use the provided wrapper to instrument your basic Lambda function:
 ```go
 // Add import
-import "go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda"
+import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda"
 
 // wrap lambda handler function
 func main() {
@@ -87,10 +87,10 @@ func HandleRequest(ctx context.Context, request mockHTTPRequest) error {
 
 func main() {
 	exp, _ := stdouttrace.New()
-    
+
 	tp := sdktrace.NewTracerProvider(
 		    sdktrace.WithBatcher(exp))
-	
+
 	lambda.Start(otellambda.InstrumentHandler(HandleRequest,
 		                                    otellambda.WithTracerProvider(tp),
 		                                    otellambda.WithFlusher(tp),
@@ -103,7 +103,7 @@ func main() {
 
 - For more information on OpenTelemetry, visit: <https://opentelemetry.io/>
 - For more about OpenTelemetry Go: <https://github.com/open-telemetry/opentelemetry-go>
-- For help or feedback on this project, join us in [GitHub Discussions][discussions-url] 
+- For help or feedback on this project, join us in [GitHub Discussions][discussions-url]
 
 ## License
 
@@ -111,7 +111,7 @@ Apache 2.0 - See [LICENSE][license-url] for more information.
 
 [license-url]: https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/LICENSE
 [license-image]: https://img.shields.io/badge/license-Apache_2.0-green.svg?style=flat
-[goref-image]: https://pkg.go.dev/badge/go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda.svg
-[goref-url]: https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda
+[goref-image]: https://pkg.go.dev/badge/github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda.svg
+[goref-url]: https://pkg.go.dev/github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda
 [discussions-url]: https://github.com/open-telemetry/opentelemetry-go/discussions
 [lambda-detector-url]: https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/detectors/aws/lambda

@@ -1,10 +1,10 @@
-module go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron/test
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron/test
 
 go 1.18
 
 require (
 	github.com/stretchr/testify v1.8.2
-	go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron v0.40.0
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron v0.40.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0
 	go.opentelemetry.io/otel/trace v1.14.0
@@ -25,6 +25,6 @@ require (
 )
 
 replace (
-	go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron => ../
-	go.opentelemetry.io/contrib/propagators/b3 => ../../../../../propagators/b3
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron => ../
+	github.com/lytics/opentelemetry-go-contrib/propagators/b3 => ../../../../../propagators/b3
 )

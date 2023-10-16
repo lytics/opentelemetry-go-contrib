@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego"
-	"go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego/internal"
-	"go.opentelemetry.io/contrib/propagators/b3"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego/internal"
+	"github.com/lytics/opentelemetry-go-contrib/propagators/b3"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/sdk/trace"

@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/propagators/b3
+module github.com/lytics/opentelemetry-go-contrib/propagators/b3
 
 go 1.18
 

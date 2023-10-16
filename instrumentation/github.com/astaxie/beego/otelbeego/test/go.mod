@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego/test
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego/test
 
 go 1.18
 
@@ -6,8 +6,8 @@ require (
 	github.com/astaxie/beego v1.12.3
 	github.com/elazarl/go-bindata-assetfs v1.0.1
 	github.com/stretchr/testify v1.8.2
-	go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego v0.40.0
-	go.opentelemetry.io/contrib/propagators/b3 v1.15.0
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego v0.40.0
+	github.com/lytics/opentelemetry-go-contrib/propagators/b3 v1.15.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0
 )
@@ -28,7 +28,7 @@ require (
 	github.com/prometheus/common v0.37.0 // indirect
 	github.com/prometheus/procfs v0.8.0 // indirect
 	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
-	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.40.0 // indirect
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/net/http/otelhttp v0.40.0 // indirect
 	go.opentelemetry.io/otel/metric v0.37.0 // indirect
 	go.opentelemetry.io/otel/trace v1.14.0 // indirect
 	golang.org/x/crypto v0.1.0 // indirect
@@ -41,7 +41,7 @@ require (
 )
 
 replace (
-	go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego => ../
-	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp => ../../../../../net/http/otelhttp
-	go.opentelemetry.io/contrib/propagators/b3 => ../../../../../../propagators/b3
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego => ../
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/net/http/otelhttp => ../../../../../net/http/otelhttp
+	github.com/lytics/opentelemetry-go-contrib/propagators/b3 => ../../../../../../propagators/b3
 )

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otelmacaron // import "go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron"
+package otelmacaron // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron"
 
 import (
 	"fmt"
@@ -27,7 +27,7 @@ import (
 )
 
 // instrumentationName is the name of this instrumentation package.
-const instrumentationName = "go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron"
+const instrumentationName = "github.com/lytics/opentelemetry-go-contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron"
 
 // Middleware returns a macaron Handler to trace requests to the server.
 func Middleware(service string, opts ...Option) macaron.Handler {

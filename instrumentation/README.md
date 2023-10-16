@@ -70,16 +70,16 @@ In order to ensure the maintainability and discoverability of instrumentation pa
 All instrumentation packages SHOULD be of the form:
 
 ```
-go.opentelemetry.io/contrib/instrumentation/{IMPORT_PATH}/otel{PACKAGE_NAME}
+github.com/lytics/opentelemetry-go-contrib/instrumentation/{IMPORT_PATH}/otel{PACKAGE_NAME}
 ```
 
 Where the [`{IMPORT_PATH}`](https://golang.org/ref/spec#ImportPath) and [`{PACKAGE_NAME}`](https://golang.org/ref/spec#PackageName) are the standard Go identifiers for the package being instrumented.
 
 For example:
 
-- `go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux`
-- `go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron`
-- `go.opentelemetry.io/contrib/instrumentation/database/sql/otelsql`
+- `github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gorilla/mux/otelmux`
+- `github.com/lytics/opentelemetry-go-contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron`
+- `github.com/lytics/opentelemetry-go-contrib/instrumentation/database/sql/otelsql`
 
 Exceptions to this rule exist.
 For example, the [runtime](./runtime) and [host](./host) instrumentation do not instrument any Go package and therefore do not fit this structure.
@@ -93,7 +93,7 @@ Additionally the following guidelines for package composition need to be followe
    Therefore, an appropriately configured `go.mod` and `go.sum` need to exist for each package.
 - To help understand the instrumentation a Go package documentation SHOULD be included.
    This documentation SHOULD be in a dedicated `doc.go` file if the package is more than one file.
-   It SHOULD contain useful information like what the purpose of the instrumentation is, how to use it, and any compatibility restrictions that might exist. 
+   It SHOULD contain useful information like what the purpose of the instrumentation is, how to use it, and any compatibility restrictions that might exist.
 - Examples of how to actually use the instrumentation SHOULD be included.
 - All instrumentation packages MUST provide an option to accept a `TracerProvider` if it uses a Tracer, a `MeterProvider` if it uses a Meter, and `Propagators` if it handles any context propagation.
   Also, packages MUST use the default `TracerProvider`, `MeterProvider`, and `Propagators` supplied by the `global` package if no optional one is provided.

@@ -1,11 +1,11 @@
-module go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux/test
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gorilla/mux/otelmux/test
 
 go 1.18
 
 require (
 	github.com/gorilla/mux v1.8.0
 	github.com/stretchr/testify v1.8.2
-	go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux v0.40.0
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gorilla/mux/otelmux v0.40.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0
 	go.opentelemetry.io/otel/trace v1.14.0
@@ -21,4 +21,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux => ../
+replace github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gorilla/mux/otelmux => ../

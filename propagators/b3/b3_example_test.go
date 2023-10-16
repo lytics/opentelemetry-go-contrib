@@ -15,7 +15,7 @@
 package b3_test
 
 import (
-	"go.opentelemetry.io/contrib/propagators/b3"
+	"github.com/lytics/opentelemetry-go-contrib/propagators/b3"
 	"go.opentelemetry.io/otel"
 )
 

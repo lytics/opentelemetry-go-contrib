@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otelgocql // import "go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql"
+package otelgocql // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql"
 
 import (
 	"context"
 
 	"github.com/gocql/gocql"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
 	"go.opentelemetry.io/otel/trace"
 )
 

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package host // import "go.opentelemetry.io/contrib/instrumentation/host"
+package host // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/host"
 
 import (
 	"context"
@@ -103,7 +103,7 @@ func Start(opts ...Option) error {
 	}
 	h := &host{
 		meter: c.MeterProvider.Meter(
-			"go.opentelemetry.io/contrib/instrumentation/host",
+			"github.com/lytics/opentelemetry-go-contrib/instrumentation/host",
 			metric.WithInstrumentationVersion(SemVersion()),
 		),
 		config: c,

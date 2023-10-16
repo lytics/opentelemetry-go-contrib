@@ -26,9 +26,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql"
-	"go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
-	"go.opentelemetry.io/contrib/internal/util"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
+	"github.com/lytics/opentelemetry-go-contrib/internal/util"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/instrumentation"
 	"go.opentelemetry.io/otel/sdk/metric"
@@ -254,7 +254,7 @@ func getCluster() *gocql.ClusterConfig {
 
 func assertScope(t *testing.T, sm metricdata.ScopeMetrics) {
 	assert.Equal(t, instrumentation.Scope{
-		Name:    "go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql",
+		Name:    "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql",
 		Version: otelgocql.SemVersion(),
 	}, sm.Scope)
 }

@@ -1,19 +1,19 @@
-module go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda/xrayconfig
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda/xrayconfig
 
 go 1.18
 
 replace (
-	go.opentelemetry.io/contrib/detectors/aws/lambda => ../../../../../../detectors/aws/lambda
-	go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda => ../
-	go.opentelemetry.io/contrib/propagators/aws => ../../../../../../propagators/aws
+	github.com/lytics/opentelemetry-go-contrib/detectors/aws/lambda => ../../../../../../detectors/aws/lambda
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda => ../
+	github.com/lytics/opentelemetry-go-contrib/propagators/aws => ../../../../../../propagators/aws
 )
 
 require (
 	github.com/aws/aws-lambda-go v1.37.0
 	github.com/stretchr/testify v1.8.2
-	go.opentelemetry.io/contrib/detectors/aws/lambda v0.40.0
-	go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda v0.40.0
-	go.opentelemetry.io/contrib/propagators/aws v1.15.0
+	github.com/lytics/opentelemetry-go-contrib/detectors/aws/lambda v0.40.0
+	github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/aws/aws-lambda-go/otellambda v0.40.0
+	github.com/lytics/opentelemetry-go-contrib/propagators/aws v1.15.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.14.0
 	go.opentelemetry.io/otel/sdk v1.14.0

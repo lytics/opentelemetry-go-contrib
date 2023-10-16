@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
+package internal // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
 
 import (
 	"log"
@@ -58,7 +58,7 @@ const (
 	CassConnectName = "New Connection"
 
 	// InstrumentationName is the name of the instrumentation package.
-	InstrumentationName = "go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql"
+	InstrumentationName = "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql"
 )
 
 // ------------------------------------------ Connection-level Attributes

@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/propagators/ot
+module github.com/lytics/opentelemetry-go-contrib/propagators/ot
 
 go 1.18
 

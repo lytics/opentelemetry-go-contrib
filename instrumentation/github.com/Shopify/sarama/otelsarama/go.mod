@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/instrumentation/github.com/Shopify/sarama/otelsarama
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/Shopify/sarama/otelsarama
 
 go 1.18
 

@@ -1,13 +1,13 @@
-module go.opentelemetry.io/contrib/instrumentation/github.com/emicklei/go-restful/otelrestful
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/emicklei/go-restful/otelrestful
 
 go 1.18
 
-replace go.opentelemetry.io/contrib/propagators/b3 => ../../../../../propagators/b3
+replace github.com/lytics/opentelemetry-go-contrib/propagators/b3 => ../../../../../propagators/b3
 
 require (
 	github.com/emicklei/go-restful/v3 v3.10.1
 	github.com/stretchr/testify v1.8.2
-	go.opentelemetry.io/contrib/propagators/b3 v1.15.0
+	github.com/lytics/opentelemetry-go-contrib/propagators/b3 v1.15.0
 	go.opentelemetry.io/otel v1.14.0
 	go.opentelemetry.io/otel/trace v1.14.0
 )

@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql
 
 go 1.18
 

@@ -13,4 +13,4 @@
 // limitations under the License.
 
 // Package otelbeego instruments the github.com/astaxie/beego package.
-package otelbeego // import "go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego"
+package otelbeego // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego"

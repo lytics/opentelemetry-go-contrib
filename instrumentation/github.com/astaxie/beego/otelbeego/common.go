@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otelbeego // import "go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego"
+package otelbeego // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego"
 
 import (
 	"net/http"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/astaxie/beego/otelbeego/internal"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/astaxie/beego/otelbeego/internal"
 	"go.opentelemetry.io/otel/attribute"
 )
 

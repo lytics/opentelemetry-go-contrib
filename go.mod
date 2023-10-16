@@ -1,3 +1,3 @@
-module go.opentelemetry.io/contrib
+module github.com/lytics/opentelemetry-go-contrib
 
 go 1.18

@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/detectors/gcp
+module github.com/lytics/opentelemetry-go-contrib/detectors/gcp
 
 go 1.18
 

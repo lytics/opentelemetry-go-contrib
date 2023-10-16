@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package runtime // import "go.opentelemetry.io/contrib/instrumentation/runtime"
+package runtime // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/runtime"
 
 import (
 	"context"
@@ -107,7 +107,7 @@ func Start(opts ...Option) error {
 	}
 	r := &runtime{
 		meter: c.MeterProvider.Meter(
-			"go.opentelemetry.io/contrib/instrumentation/runtime",
+			"github.com/lytics/opentelemetry-go-contrib/instrumentation/runtime",
 			metric.WithInstrumentationVersion(SemVersion()),
 		),
 		config: c,

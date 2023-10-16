@@ -216,7 +216,7 @@ test-coverage/%:
 	@set -e; \
 		CMD="$(GO) test -race -covermode=$(COVERAGE_MODE) -coverprofile=$(COVERAGE_PROFILE)"; \
 		echo "$(DIR)" | grep -q 'test$$' \
-		&& CMD="$$CMD -coverpkg=go.opentelemetry.io/contrib/$$( dirname "$(DIR)" | sed -e "s/^\.\///g" )/..."; \
+		&& CMD="$$CMD -coverpkg=github.com/lytics/opentelemetry-go-contrib/$$( dirname "$(DIR)" | sed -e "s/^\.\///g" )/..."; \
 		echo "$$CMD $(DIR)/..."; \
 		cd "$(DIR)" \
 		&& $$CMD ./... \
@@ -232,7 +232,7 @@ test-gocql:
 	    $(GO) test \
 		  -covermode=$(COVERAGE_MODE) \
 		  -coverprofile=$(COVERAGE_PROFILE) \
-		  -coverpkg=go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql/...  \
+		  -coverpkg=github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql/...  \
 		  ./... \
 	    && $(GO) tool cover -html=$(COVERAGE_PROFILE) -o coverage.html); \
 	  cp ./instrumentation/github.com/gocql/gocql/otelgocql/test/coverage.out ./; \
@@ -249,7 +249,7 @@ test-mongo-driver:
 	    $(GO) test \
 		  -covermode=$(COVERAGE_MODE) \
 		  -coverprofile=$(COVERAGE_PROFILE) \
-		  -coverpkg=go.opentelemetry.io/contrib/instrumentation/go.mongodb.org/mongo-driver/mongo/otelmongo/...  \
+		  -coverpkg=github.com/lytics/opentelemetry-go-contrib/instrumentation/go.mongodb.org/mongo-driver/mongo/otelmongo/...  \
 		  ./... \
 	    && $(GO) tool cover -html=$(COVERAGE_PROFILE) -o coverage.html); \
 	  cp ./instrumentation/go.mongodb.org/mongo-driver/mongo/otelmongo/test/coverage.out ./; \
@@ -266,7 +266,7 @@ test-gomemcache:
 	    $(GO) test \
 		  -covermode=$(COVERAGE_MODE) \
 		  -coverprofile=$(COVERAGE_PROFILE) \
-		  -coverpkg=go.opentelemetry.io/contrib/instrumentation/github.com/bradfitz/gomemcache/memcache/otelmemcache/...  \
+		  -coverpkg=github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/bradfitz/gomemcache/memcache/otelmemcache/...  \
 		  ./... \
 	    && $(GO) tool cover -html=$(COVERAGE_PROFILE) -o coverage.html); \
 	  docker stop gomemcache-integ ; \

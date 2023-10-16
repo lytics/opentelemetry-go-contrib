@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/propagators/opencensus
+module github.com/lytics/opentelemetry-go-contrib/propagators/opencensus
 
 go 1.18
 

@@ -13,4 +13,4 @@
 // limitations under the License.
 
 // Package otelgocql instruments the github.com/gocql/gocql package.
-package otelgocql // import "go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql"
+package otelgocql // import "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql"

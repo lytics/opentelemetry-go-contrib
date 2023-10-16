@@ -22,7 +22,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/go-kit/kit/otelkit"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/go-kit/kit/otelkit"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
@@ -195,7 +195,7 @@ func TestEndpointMiddleware(t *testing.T) {
 		require.Len(t, events, 1)
 
 		assert.Equal(t, "exception", events[0].Name)
-		assert.Contains(t, events[0].Attributes, attribute.String("exception.type", "go.opentelemetry.io/contrib/instrumentation/github.com/go-kit/kit/otelkit/test.customError"))
+		assert.Contains(t, events[0].Attributes, attribute.String("exception.type", "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/go-kit/kit/otelkit/test.customError"))
 		assert.Contains(t, events[0].Attributes, attribute.String("exception.message", "something went wrong"))
 	})
 
@@ -226,7 +226,7 @@ func TestEndpointMiddleware(t *testing.T) {
 		require.Len(t, events, 1)
 
 		assert.Equal(t, "exception", events[0].Name)
-		assert.Contains(t, events[0].Attributes, attribute.String("exception.type", "go.opentelemetry.io/contrib/instrumentation/github.com/go-kit/kit/otelkit/test.customError"))
+		assert.Contains(t, events[0].Attributes, attribute.String("exception.type", "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/go-kit/kit/otelkit/test.customError"))
 		assert.Contains(t, events[0].Attributes, attribute.String("exception.message", "some business error"))
 	})
 
@@ -258,7 +258,7 @@ func TestEndpointMiddleware(t *testing.T) {
 		require.Len(t, events, 1)
 
 		assert.Equal(t, "exception", events[0].Name)
-		assert.Contains(t, events[0].Attributes, attribute.String("exception.type", "go.opentelemetry.io/contrib/instrumentation/github.com/go-kit/kit/otelkit/test.customError"))
+		assert.Contains(t, events[0].Attributes, attribute.String("exception.type", "github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/go-kit/kit/otelkit/test.customError"))
 		assert.Contains(t, events[0].Attributes, attribute.String("exception.message", "some business error"))
 	})
 }

@@ -29,7 +29,7 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	b3prop "go.opentelemetry.io/contrib/propagators/b3"
+	b3prop "github.com/lytics/opentelemetry-go-contrib/propagators/b3"
 )
 
 func init() {

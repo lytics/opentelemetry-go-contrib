@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"
-	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc/internal"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/google.golang.org/grpc/otelgrpc"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/google.golang.org/grpc/otelgrpc/internal"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/sdk/trace"

@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace
+module github.com/lytics/opentelemetry-go-contrib/instrumentation/net/http/httptrace/otelhttptrace
 
 go 1.18
 

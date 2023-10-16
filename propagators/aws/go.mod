@@ -1,4 +1,4 @@
-module go.opentelemetry.io/contrib/propagators/aws
+module github.com/lytics/opentelemetry-go-contrib/propagators/aws
 
 go 1.18
 

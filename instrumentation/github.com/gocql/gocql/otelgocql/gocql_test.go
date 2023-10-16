@@ -20,7 +20,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
+	"github.com/lytics/opentelemetry-go-contrib/instrumentation/github.com/gocql/gocql/otelgocql/internal"
 	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
 )
 
